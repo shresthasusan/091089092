@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title> Travels</title>
+  <link rel="stylesheet" href="yatra.css" />
+  <script src="subha.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="favicon.png" sizes="16x16">
+  <script src="https://kit.fontawesome.com/44c82d358e.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="background-color: #dff2f6">
+
+  <div class="container" style="z-index: -1; "> 
+
+    <div class="main-nav" id="main-nav">
+      <ul id="nav-list">
+
+        <li>
+          <a href="#">HOME</a>
+        </li>
+
+        <li>
+          <a href="#book">BOOK</a>
+        </li>
+
+        <li>
+          <a href="#packages">PACKAGES</a>
+        </li>
+
+        <li>
+          <a href="#gallery">GALLERY</a>
+        </li>
+
+        <li>
+          <a href="#">ABOUT US</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  <header>
+
+    <nav>
+      <!-- Your navigation menu here -->
+
+      <button id="burger" class="open-main-nav buttons">
+        <span class="burger"></span>
+
+      </button>
+
+      <div id="logo"></div>
+      <ul id="links-container">
+        <li>
+          <a href="#">HOME</a>
+        </li>
+        <li>
+          <a href="#book">BOOK</a>
+        </li>
+        <li>
+          <a href="#packages">PACKAGES</a>
+        </li>
+        <li>
+          <a href="#gallery">GALLERY</a>
+        </li>
+        <li>
+          <a href="#">ABOUT US</a>
+        </li>
+      </ul>
+      <a href="#" class="buttons" id="nav-button">CONTACT US</a>
+
+    </nav>
+  </header>
+
+  <main>
+    <!-- Your main content here -->
+    <p id="hero-text">Travel is an investment to yourself</p>
+    <img src="front.jpg" alt="front img" id="front" />
+
+    <div class="features" id="book">
+      <ul>
+        <li>
+          <img src="air-arabia-seeklogo.png" alt="air-arabia" id="airline" />
+        </li>
+        <li>
+          <img src="nepal-airlines-seeklogo.png" alt="air-arabia" id="airline" />
+        </li>
+        <li>
+          <img src="logooo-new-1d5f07af.png" alt="air-arabia" id="airline" />
+        </li>
+        <li>
+          <img src="fly-dubai-seeklogo.png" alt="air-arabia" id="airline" />
+        </li>
+      </ul>
+
+      <!-- flight booking forms -->
+      <div class="form-wrap">
+        <form>
+          <div class="outer-form">
+
+            <select id="trip-type" name="trip-type">
+              <option value="one-way">One Way</option>
+              <option value="two-way">Two Way</option>
+            </select>
+
+            <select id="nationality" name="nationality">
+              <option value="none" selected disabled hidden>Nationality</option>
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              <option value="UK">UK</option>
+              <option value="Australia">Australia</option>
+              <!-- Add more options as needed -->
+            </select>
+            <select id="num-travellers" name="num-travellers">
+              <option value="none" selected disabled hidden>Number of travellers</option>
+              <option value="1">1 Travellers</option>
+              <option value="2">2 Travellers</option>
+              <option value="3">3 Travellers</option>
+              <option value="4">4 Travellers</option>
+              <!-- Add more options as needed -->
+            </select>
+
+          </div>
+
+          <!-- <img src="dotted_section.png" alt="section-form" id="section-form"> -->
+
+          <div class="second-section">
+            <div class="inner-form">
+              <div class="form-division">
+                <label for="from-location">From:</label>
+                <select id="from-location" name="from-location">
+                  <option value="" disabled selected>Select departure location</option>
+                  <option value="New York">New York</option>
+                  <option value="London">London</option>
+                  <option value="Sydney">Sydney</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </div>
+
+              <a href="#" onclick="swap" class="buttons button-swap">
+                <i class="fa-solid fa-rotate">
+
+                </i></a>
+
+              <div class="form-division">
+                <label for="to-location">To:</label>
+                <select id="to-location" name="to-location">
+                  <option value="" disabled selected>Select destination location</option>
+                  <option value="Paris">Paris</option>
+                  <option value="Tokyo">Tokyo</option>
+                  <option value="Dubai">Dubai</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </div>
+              <div class="form-division">
+                <label for="departure-date">Departure Date:</label>
+                <input type="date" id="departure-date" name="departure-date">
+              </div>
+
+              <div class="form-division">
+                <label for="return-date">Return Date:</label>
+                <input type="date" id="return-date" name="return-date">
+              </div>
+
+            </div>
+
+          </div>
+          <a href="#" onclick="submitform()" class="buttons button-form">Search Flight</a>
+          <!-- <input type="submit" value="Book Tickets"> -->
+        </form>
+      </div>
+    </div>
+    <div class="add-ons">
+      <div class="add-on-text">
+        <h1 id="primary-color">
+          Thrilling Adventures Await: Unleash Your Spirit in Dubai's Natural Wonders
+        </h1>
+        <br>
+        <p id="add-on-text">
+          <span>Embark on an adventure like no other in Dubai, where adrenaline-pumping experiences await amidst its natural wonders.
+           Brace yourself for heart-pounding desert safaris, exhilarating underwater encounters, and epic mountain escapades that will leave you with memories to last a lifetime.
+          </span>
+         <span> Feel the rush as you traverse the mesmerizing sand dunes on a thrilling desert safari. Strap into a 4x4 vehicle and conquer the undulating terrain with dune bashing, 
+          or try your hand at sandboarding for an extra dose of excitement. As the sun sets over the desert, immerse yourself in the magical atmosphere of a 
+          traditional Bedouin-style camp.</span>
+
+        <span> Dive into the crystal-clear waters of the Arabian Gulf for an unforgettable underwater adventure. Snorkel or scuba dive among vibrant coral reefs,
+           encountering an array of colorful marine life. From graceful dolphins to mesmerizing tropical fish, the underwater world of Dubai will leave you in awe.</span></p>
+      </div>
+      <div class="add-on-image">
+        <img src="addon1.jpg" alt="addon1">
+        <img src="addon2.jpg" alt="addon2">
+        <img src="addon3.jpg" alt="addon3">
+      </div>
+    </div>
+
+    <!-- packages display here -->
+    <div class="packages" id="packages">
+      <div class="package-text">
+        <h1>OUR PACKAGES</h1>
+
+        <p>
+          we offer the most versatile packages for your perfect holiday
+          trip.
+        </p>
+      </div>
+      <div class="package-display">
+        <div class="display-wrap">
+          <div class="display">
+            <div class="display-main-front">
+              <div class="display-main">
+                <h1>15 days package</h1>
+              </div>
+              <p>
+                Our 15-day travel package is perfect for those who want a
+                short but sweet escape. Experience the highlights of your
+                chosen destination without compromising on comfort and luxury.
+              </p>
+            </div>
+            <div class="display-main-back">
+              <div class="display-main">
+                <h1>BOOK NOW!</h1>
+              </div>
+              <a href="#" class="buttons" id="package-button" alt="package more">GET DISCOUNTS</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="display-wrap">
+          <div class="display">
+            <div class="display-main-front">
+              <div class="display-main">
+                <h1>30 days package</h1>
+              </div>
+              <p>
+                Our 30-day travel package offers an extended journey filled
+                with unforgettable experiences. Immerse yourself in the
+                wonders of your chosen destination, allowing ample time to
+                explore its hidden gems while enjoying the utmost comfort and
+                luxury.
+              </p>
+            </div>
+            <div class="display-main-back">
+              <div class="display-main">
+                <h1>BOOK NOW!</h1>
+              </div>
+              <a href="#" class="buttons" id="package-button" alt="package more">GET DISCOUNTS</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="display-wrap">
+          <div class="display">
+            <div class="display-main-front">
+              <div class="display-main">
+                <h1>60 days package</h1>
+              </div>
+              <p>
+                Indulge in a transformative 60-day travel package, immersing
+                yourself in your chosen destination's wonders. Explore
+                stunning landscapes, embrace vibrant culture, and enjoy
+                luxurious comforts. Discover hidden gems, create lasting
+                memories on this unforgettable journey
+              </p>
+            </div>
+            <div class="display-main-back">
+              <div class="display-main">
+                <h1>BOOK NOW!</h1>
+              </div>
+              <a href="#" class="buttons" id="package-button" alt="package more">GET DISCOUNTS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="buttons" id="package-button" alt="package more">SEE MORE </a>
+    </div>
+    <div class="why-us-wrap">
+      <h1 style="color: #ffffff ; font-family: nunito; font-size: 2.2rem;">WHY CHOOSE US?</h1>
+      <div class="why-us">
+        <div class="why">
+          <img src="resort.png" id="why-us-icon">
+          <p>Get  best best hotels for your comfortable stay</p>
+        </div>
+        <div class="why">
+          <img src="donation.png" id="why-us-icon">
+          <p>Get  best best hotels for your comfortable stay</p>
+        </div>
+        <div class="why">
+          <img src="save-money.png" id="why-us-icon">
+          <p>Get  best best hotels for your comfortable stay</p>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-wrap">
+      <h1 id="primary-color">Our Gallery</h1>
+      <p style="color: #52abcd;">Our favourite clients</p>
+      <div class="gallery" id="gallery">
+
+        <div class="image">
+          <img src="img1.jpg" alt="Image 1">
+        </div>
+        <div class="image">
+          <img src="img2.jpg" alt="Image 2">
+        </div>
+        <div class="image">
+          <img src="img3.png" alt="Image 3">
+        </div>
+        <div class="image">
+          <img src="img4.png" alt="Image 4">
+        </div>
+        <div class="image">
+          <img src="C:\Users\shres\Pictures\Wrk\pp.png" alt="Image 5">
+        </div>
+        <div class="image">
+          <img src="img5.png" alt="Image 6">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="our-patners">
+      <section class="patners-wrap">
+        <h1>Our Patners</h1>
+        <div class="patners">
+          <img src="hyat.png">
+          <img src="Marriott.png">
+          <img src="Taj.png">
+          <img src="griffity_logo.png">
+          <img src="padma-ubud-logo.png">
+          <img src="logo-ozen.png">
+        </div>
+      </section>
+      <section class="patners-wrap">
+        <h1>Payment Patners</h1>
+        <div class="patners">
+          <img src="visa-logo-png-5.png">
+          <img src="mc_symbol_opt_73_1x.png">
+          <img src="logo_connectIPS.png">
+          <img src="esewa.png">
+          <img src="khalti.png">
+          <img src="paypal-logo-png-1.png">
+        </div>
+      </section>
+    </div>
+    <section class="before-footer">
+      <img src="beforefooter.png">
+    </section>
+  </main>
+
+  <footer>
+   
+    <section class="upper-section">
+      <div class="space">
+        <h1>Get Exciting Offers Now !</h1>
+        <div class="icons-wrap">
+
+          <i class="fa-brands fa-tiktok   fa-sm"></i>
+          <i class="fa-brands fa-instagram fa-sm"></i>
+          <i class="fa-brands fa-facebook fa-sm"></i>
+          <i class="fa-brands fa-twitter fa-sm"></i>
+          <i class="fa-brands fa-whatsapp fa-sm"></i>
+          <i class="fa-brands fa-pinterest fa-sm"></i>
+
+        </div>
+
+      </div>
+      <div class="footer-float-shadow">
+        &nbsp;
+      </div>
+      <div class="footer-float-shadow-down">
+        &nbsp;
+      </div>
+      <div class="footer-float">
+        <h1 style="color: #fff;">ADVENTURE AWAITS YOU</h1>
+      </div>
+
+      <!-- <div id="logo" class="logo-footer"></div> -->
+
+    </section>
+   
+    <section class="lower-section">
+      <div class="footer-element-wrap">
+        <section>
+
+          <div class="link-list-wrap">
+
+            <ul>
+              <div id="after">
+                <h1>CONNECT WITH US</h1>
+              </div>
+              <li><i class="fa-solid fa-phone"></i> +977-9806701688</li>
+              <li><i class="fa-solid fa-location-pin"></i> Uma Maheswori Marg, LMC-5</li>
+              <li><i class="fa-solid fa-envelope"></i> info@therewego.com</li>
+
+            </ul>
+            <div class="topic after">
+              <h1>SUBSCRIBE US</h1>
+              <form action="#" class="subscribe">
+                <input type="text" placeholder="Enter email address">
+                <a href="#" class="buttons button-submit">Submit</a>
+              </form>
+              <div class="icons-wrap mobile-media">
+
+                <i class="fa-brands fa-tiktok       fa-xl"></i>
+                <i class="fa-brands fa-instagram    fa-xl"></i>
+                <i class="fa-brands fa-facebook     fa-xl"></i>
+                <i class="fa-brands fa-twitter      fa-xl"></i>
+                <i class="fa-brands fa-whatsapp     fa-xl"></i>
+                <i class="fa-brands fa-pinterest    fa-xl"></i>
+
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <section class="links-wrap">
+          <div class="link-list-wrap">
+            <div id="after">
+              <h1>COMPANY</h1>
+            </div>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Legal Documents</a></li>
+              <li><a href="#">Payment and Booking</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+
+          </div>
+          <div class="link-list-wrap">
+            <div id="after">
+              <h1>QUICK LINKS</h1>
+            </div>
+            <ul>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#packages">Tour Packages</a></li>
+              <li><a href="#">Destinations</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Leave a Review</a></li>
+
+            </ul>
+
+          </div>
+        </section>
+
+      </div>
+      <section id="map-wrap">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1485.8196672421122!2d85.31748298892694!3d27.658731280953567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x39eb177e02a6034f%3A0xd35f8ab1e2d4c7c1!2sUma%20Maheshwor%20Marg%20Paschim%2C%20Lalitpur%2044700!3m2!1d27.6582768!2d85.317799!5e0!3m2!1sen!2snp!4v1686297237959!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </section>
+
+    </section>
+    <div class="copyright">&copy 2023 WeGoThere Tours & Travels. All rights reserved. | Designed by Elevate</div>
+    <div class="corner-shape">
+      &nbsp;
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
