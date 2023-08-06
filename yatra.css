@@ -51,7 +51,7 @@ nav {
   height: 65px;
   z-index: 2;
   top: 0px;
-  background-color: #dff2f6db;
+  background-color: #dff2f6ed;
   justify-content: center;
   text-align: center;
   filter: drop-shadow(0px 0px 2px #adafafc9);
@@ -429,7 +429,7 @@ main ul {
   font-weight: bold;
   margin: 5em auto 0 auto;
   width: 60%;
-  background: rgba(249, 250, 255, 0.87) !important;
+  background: #f9faffde !important;
   border-radius: 8px;
   box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 10%);
 }
@@ -452,7 +452,7 @@ main ul {
   background: none;
   height: 45px;
   width: 49%;
-  color: #16a5db;
+  color: #00000059;
   border-color: #9ae2fd;
   min-width: 120px;
   border-bottom-style: inset;
@@ -503,8 +503,8 @@ main ul {
   border-color: #9ee3ff;
   border-image: initial;
   border-radius: 8px;
-  color: #16a5db;
-  width: 203px;
+  color: #00000073;
+  width: 100%;
 }
 
 .inner-form input {
@@ -513,9 +513,9 @@ main ul {
   border-style: solid;
   border-color: #9ee3ff;
   border-image: initial;
-  width: 200px;
+  width: 100%;
   border-radius: 6px;
-  color: #16a5db;
+  color: #00000069;
 }
 
 /* swap button style */
@@ -555,13 +555,12 @@ main ul {
 .add-on-text {
   width: 50%;
   margin: 0 30px;
-  font-size: 20px;
+  font-size: 1em;
   text-align: start;
 }
 #add-on-text{
-  color: #52abcd;
+  color: #0000008c;
   display: flex;
-
 }
 #add-on-text span{
   margin: 5px;
@@ -835,11 +834,10 @@ width: 100%;
 z-index: 0;
 }
 .before-footer img{
-  top: 0;
   width: 100%;
   object-fit: cover;
   position: relative;
-  height: 125px;
+  max-height: 285px;
   margin: -5px;
 }
 .upper-section {
