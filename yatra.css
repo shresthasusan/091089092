@@ -1190,7 +1190,7 @@ z-index: 0;
 @media (min-width: 601px) and (max-width: 1150px){
   .footer-float{
     transition: .6s;
-    background-color: #ffffff00;
+    background-color: #000;
     justify-content: flex-end;
     transform: inherit;
   }
