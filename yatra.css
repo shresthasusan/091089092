@@ -705,9 +705,7 @@ main ul {
 }
 
 .display-main {
-  backface-visibility: hidden;
   text-decoration-thickness: from-font;
-  font-weight: hidden;
   position: inherit;
 }
 
